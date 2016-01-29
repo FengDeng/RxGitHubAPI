@@ -13,6 +13,15 @@ let domain = "https://api.github.com"
 
 //User
 //Get a single user
-func userURL(username:String)->String{
+func kUserURL(username:String)->String{
     return domain + "/users/\(username)"
+}
+
+//search repos
+var kSearchReposURL : String{
+    return domain + "/search/repositories"
+}
+//search users
+var kSearchUsersURL : String{
+    return domain + "/search/users"
 }

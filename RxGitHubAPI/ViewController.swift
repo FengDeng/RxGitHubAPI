@@ -18,18 +18,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        RxGitHubAPI.yy_user.subscribeNext { (user) -> Void in
-            print(user.login)
-            user.yy_repos.nextPage.subscribe({ (event) -> Void in
-                switch event{
-                case .Completed:
-                    print("com")
-                case .Next(let e):
-                    print(e)
-                case .Error(let e):
-                    print(e)
+        RxGitHubAPI.searchUsers("Swift").subscribe { (event) -> Void in
+            switch event{
+            case .Next(let repoR):
+                for obj in repoR.items{
+                    print(obj.login)
                 }
-            })
+            case .Error(let e):
+                print(e)
+                
+            case.Completed:
+                print("compelted")
+            }
         }
 
         

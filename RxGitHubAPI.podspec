@@ -15,7 +15,7 @@ s.platform     = :ios, '8.0'
 s.requires_arc = true
 
 s.source_files = 'RxGitHubAPI/RxGitHubAPI/*.swift'
-s.frameworks = 'Foundation','UIKit'
+s.frameworks = 'Foundation'
 
 s.dependency 'RxSwift', '~> 2.0.0'
 s.dependency 'RxCocoa', '~> 2.0.0'

@@ -75,7 +75,7 @@ extension Request{
                 }
                 observer.onNext(obj)
                 observer.onCompleted()
-
+                
             })
             return NopDisposable.instance
         })

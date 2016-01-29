@@ -22,7 +22,7 @@ How get a nomal user
 	static func yy_user(username:String)->Requestable<YYUser>
 	
 
-#When you have a user
+#When you get a user
 
 get user's follower users
 
@@ -30,7 +30,7 @@ get user's follower users
                 print(users)
     })
 
-get user's repo
+get user's repos
 	
 	user.yy_repos.subscribeNext({ (repos) -> Void in
                 print(repos)
@@ -39,7 +39,23 @@ get user's repo
 and so on ……
  
  
-#Page
+#When you get a repo
+
+star it
+
+	repo.action_star
+	
+unStar it
+
+	repo.action_unStar
+	
+check starring it
+
+	repo.action_checkStar
+	
+and so on ……
+ 
+#List Result
 
 if you get a Pageable<E>,you can get next page like this
 
