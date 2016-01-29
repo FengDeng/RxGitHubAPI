@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		9F14A4B91C59E85800494527 /* YYURLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4B81C59E85800494527 /* YYURLGenerator.swift */; };
 		9F14A4BB1C59E96100494527 /* YYURLHeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4BA1C59E96100494527 /* YYURLHeaderGenerator.swift */; };
-		9F14A4BD1C59EF1100494527 /* YYGist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4BC1C59EF1100494527 /* YYGist.swift */; };
-		9F14A4BF1C59F0DF00494527 /* YYGist+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4BE1C59F0DF00494527 /* YYGist+Rx.swift */; };
 		9F14A4C31C59F23F00494527 /* YYRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4C21C59F23F00494527 /* YYRepository.swift */; };
 		9F14A4C51C59F59A00494527 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4C41C59F59A00494527 /* String+Extension.swift */; };
 		9F14A4C81C59FAC800494527 /* YYOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4C71C59FAC800494527 /* YYOrganization.swift */; };
@@ -30,6 +28,9 @@
 		9F14A4E41C5A33E600494527 /* YYAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4E31C5A33E500494527 /* YYAsset.swift */; };
 		9F14A4E61C5A380500494527 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4E51C5A380500494527 /* Dictionary+Extension.swift */; };
 		9F5648E31C590F5B00001E6D /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5648E21C590F5B00001E6D /* Requestable.swift */; };
+		9F57B35C1C5B3737005BA035 /* YYGist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35A1C5B3737005BA035 /* YYGist.swift */; };
+		9F57B35D1C5B3737005BA035 /* YYGist+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */; };
+		9F57B35F1C5B3744005BA035 /* YYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35E1C5B3744005BA035 /* YYError.swift */; };
 		9F9212151C58A562007DB071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9212141C58A562007DB071 /* AppDelegate.swift */; };
 		9F9212171C58A562007DB071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9212161C58A562007DB071 /* ViewController.swift */; };
 		9F92121A1C58A562007DB071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9212181C58A562007DB071 /* Main.storyboard */; };
@@ -39,7 +40,6 @@
 		9F9212361C58A6C6007DB071 /* YYUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9212351C58A6C6007DB071 /* YYUser.swift */; };
 		9F9212381C58ACB4007DB071 /* YYUser+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9212371C58ACB4007DB071 /* YYUser+Rx.swift */; };
 		9F92123D1C58B298007DB071 /* RxGitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92123C1C58B298007DB071 /* RxGitHubAPI.swift */; };
-		9F92123F1C58B8B2007DB071 /* YYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F92123E1C58B8B2007DB071 /* YYError.swift */; };
 		9F96365F1C59A94400FF1EA0 /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F96365E1C59A94400FF1EA0 /* Pageable.swift */; };
 		9FC9620B1C5AFDD500C55CD2 /* Actionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC9620A1C5AFDD500C55CD2 /* Actionable.swift */; };
 		BA6A330A35E23A9A529DBD18 /* Pods_RxGitHubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED4B77AA9231814B359808D /* Pods_RxGitHubAPI.framework */; };
@@ -59,8 +59,6 @@
 		03E05CEEA14DABA751AE1F8A /* Pods-RxGitHubAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGitHubAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxGitHubAPI/Pods-RxGitHubAPI.release.xcconfig"; sourceTree = "<group>"; };
 		9F14A4B81C59E85800494527 /* YYURLGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYURLGenerator.swift; path = ../YYURLGenerator.swift; sourceTree = "<group>"; };
 		9F14A4BA1C59E96100494527 /* YYURLHeaderGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYURLHeaderGenerator.swift; path = ../YYURLHeaderGenerator.swift; sourceTree = "<group>"; };
-		9F14A4BC1C59EF1100494527 /* YYGist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYGist.swift; path = ../YYGist.swift; sourceTree = "<group>"; };
-		9F14A4BE1C59F0DF00494527 /* YYGist+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "YYGist+Rx.swift"; path = "../YYGist+Rx.swift"; sourceTree = "<group>"; };
 		9F14A4C21C59F23F00494527 /* YYRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRepository.swift; sourceTree = "<group>"; };
 		9F14A4C41C59F59A00494527 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9F14A4C71C59FAC800494527 /* YYOrganization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYOrganization.swift; sourceTree = "<group>"; };
@@ -80,6 +78,9 @@
 		9F14A4E31C5A33E500494527 /* YYAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYAsset.swift; sourceTree = "<group>"; };
 		9F14A4E51C5A380500494527 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 		9F5648E21C590F5B00001E6D /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		9F57B35A1C5B3737005BA035 /* YYGist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGist.swift; sourceTree = "<group>"; };
+		9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYGist+Rx.swift"; sourceTree = "<group>"; };
+		9F57B35E1C5B3744005BA035 /* YYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYError.swift; path = RxGitHubAPI/RxGitHubAPI/YYError.swift; sourceTree = SOURCE_ROOT; };
 		9F9212111C58A562007DB071 /* RxGitHubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxGitHubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9212141C58A562007DB071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9212161C58A562007DB071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		9F9212351C58A6C6007DB071 /* YYUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYUser.swift; sourceTree = "<group>"; };
 		9F9212371C58ACB4007DB071 /* YYUser+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYUser+Rx.swift"; sourceTree = "<group>"; };
 		9F92123C1C58B298007DB071 /* RxGitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxGitHubAPI.swift; sourceTree = "<group>"; };
-		9F92123E1C58B8B2007DB071 /* YYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYError.swift; sourceTree = "<group>"; };
 		9F96365E1C59A94400FF1EA0 /* Pageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
 		9FC9620A1C5AFDD500C55CD2 /* Actionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actionable.swift; sourceTree = "<group>"; };
 		A107F02072D1FF23017D7C4A /* Pods-RxGitHubAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGitHubAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxGitHubAPI/Pods-RxGitHubAPI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,10 +130,10 @@
 		9F14A4C01C59F16700494527 /* Model And Rx */ = {
 			isa = PBXGroup;
 			children = (
+				9F57B35A1C5B3737005BA035 /* YYGist.swift */,
+				9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */,
 				9F9212351C58A6C6007DB071 /* YYUser.swift */,
 				9F9212371C58ACB4007DB071 /* YYUser+Rx.swift */,
-				9F14A4BC1C59EF1100494527 /* YYGist.swift */,
-				9F14A4BE1C59F0DF00494527 /* YYGist+Rx.swift */,
 				9F14A4C21C59F23F00494527 /* YYRepository.swift */,
 				9F14A4C91C5A01C900494527 /* YYRepository+Rx.swift */,
 				9F14A4C71C59FAC800494527 /* YYOrganization.swift */,
@@ -233,7 +233,7 @@
 			children = (
 				9F14A4BA1C59E96100494527 /* YYURLHeaderGenerator.swift */,
 				9F14A4B81C59E85800494527 /* YYURLGenerator.swift */,
-				9F92123E1C58B8B2007DB071 /* YYError.swift */,
+				9F57B35E1C5B3744005BA035 /* YYError.swift */,
 			);
 			name = "Request And Map";
 			path = Request;
@@ -400,26 +400,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F92123F1C58B8B2007DB071 /* YYError.swift in Sources */,
 				9F14A4D41C5A0CF300494527 /* YYReference.swift in Sources */,
 				9F14A4BB1C59E96100494527 /* YYURLHeaderGenerator.swift in Sources */,
 				9F14A4C31C59F23F00494527 /* YYRepository.swift in Sources */,
 				9F5648E31C590F5B00001E6D /* Requestable.swift in Sources */,
-				9F14A4BF1C59F0DF00494527 /* YYGist+Rx.swift in Sources */,
 				9F9212171C58A562007DB071 /* ViewController.swift in Sources */,
-				9F14A4BD1C59EF1100494527 /* YYGist.swift in Sources */,
 				9F14A4DC1C5A1C7A00494527 /* YYContent.swift in Sources */,
 				9F14A4CA1C5A01C900494527 /* YYRepository+Rx.swift in Sources */,
 				9F9212361C58A6C6007DB071 /* YYUser.swift in Sources */,
 				9F14A4C51C59F59A00494527 /* String+Extension.swift in Sources */,
 				9F9212151C58A562007DB071 /* AppDelegate.swift in Sources */,
+				9F57B35F1C5B3744005BA035 /* YYError.swift in Sources */,
 				9F9212381C58ACB4007DB071 /* YYUser+Rx.swift in Sources */,
 				9F96365F1C59A94400FF1EA0 /* Pageable.swift in Sources */,
 				9F14A4C81C59FAC800494527 /* YYOrganization.swift in Sources */,
 				9F14A4E01C5A2C5500494527 /* YYPullRequest.swift in Sources */,
+				9F57B35C1C5B3737005BA035 /* YYGist.swift in Sources */,
 				9F14A4DA1C5A1AC700494527 /* YYComment.swift in Sources */,
 				9F14A4D01C5A0B3600494527 /* YYBranch.swift in Sources */,
 				9F14A4CC1C5A058600494527 /* YYCollaborator.swift in Sources */,
+				9F57B35D1C5B3737005BA035 /* YYGist+Rx.swift in Sources */,
 				9F14A4DE1C5A2BF500494527 /* YYIssue.swift in Sources */,
 				9FC9620B1C5AFDD500C55CD2 /* Actionable.swift in Sources */,
 				9F14A4E41C5A33E600494527 /* YYAsset.swift in Sources */,
