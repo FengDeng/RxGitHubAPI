@@ -17,7 +17,7 @@ extension YYUser{
      
      - returns: Observable<[YYUser]>
      */
-    public func yy_followers()->Pageable<[YYUser]>{
+    public var yy_followers:Pageable<[YYUser]>{
         return Pageable(mothod: .GET, url: self.followers_url.yy_clear())
     }
     
@@ -27,7 +27,7 @@ extension YYUser{
      - returns: Observable<[YYUser]>
      */
     
-    public func yy_followings()->Pageable<[YYUser]>{
+    public var yy_followings : Pageable<[YYUser]>{
         return Pageable(mothod: .GET, url: self.following_url.yy_clear())
     }
     
@@ -36,7 +36,7 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func yy_gist()->Pageable<[YYGist]>{
+    public var yy_gist : Pageable<[YYGist]>{
         return Pageable(mothod: .GET, url: self.gists_url.yy_clear())
     }
     
@@ -45,7 +45,7 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func yy_starred()->Pageable<[YYRepository]>{
+    public var yy_starred : Pageable<[YYRepository]>{
         return Pageable(mothod: .GET, url: self.starred_url.yy_clear())
     }
     
@@ -54,7 +54,7 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func yy_subscriptions()->Pageable<[YYRepository]>{
+    public var yy_subscriptions : Pageable<[YYRepository]>{
         return Pageable(mothod: .GET, url: self.subscriptions_url.yy_clear())
     }
     
@@ -63,7 +63,7 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func yy_organizations()->Pageable<[YYOrganization]>{
+    public var yy_organizations : Pageable<[YYOrganization]>{
         return Pageable(mothod: .GET, url: self.organizations_url.yy_clear())
     }
     
@@ -72,15 +72,15 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func yy_repos()->Pageable<[YYRepository]>{
+    public var yy_repos : Pageable<[YYRepository]>{
         return Pageable(mothod: .GET, url: self.repos_url.yy_clear())
     }
     
     
     //fix me
-    //public func yy_events
+    //public var yy_events
     
-    //public func yy_received_events
+    //public var yy_received_events
     
     
     //action needs Auth
@@ -90,7 +90,7 @@ extension YYUser{
     
     - returns: return value description
     */
-    public func action_follow()->Actionable<Bool>{
+    public var action_follow : Actionable<Bool>{
         return Actionable(mothod: .PUT, url: self.action_follow_url.yy_clear(),headers:AuthHeader())
     }
     
@@ -99,7 +99,7 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func action_unFollow()->Actionable<Bool>{
+    public var action_unFollow : Actionable<Bool>{
         return Actionable(mothod: .DELETE, url: self.action_follow_url.yy_clear(),headers:AuthHeader())
     }
     
@@ -108,7 +108,7 @@ extension YYUser{
      
      - returns: return value description
      */
-    public func action_checkFollow()->Actionable<Bool>{
+    public var action_checkFollow : Actionable<Bool>{
         return Actionable(mothod: .GET, url: self.action_follow_url.yy_clear(),headers:AuthHeader())
     }
     

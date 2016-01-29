@@ -17,5 +17,6 @@ enum YYError : ErrorType {
     case YYCouldNotMakeObjectError(status:Int?,message:String?)
     case YYCouldNotMakeObjectArrayError(status:Int?,message:String?)
     case YYUnKnowContent
+    case YYGitHubErrorJSON(message:String)
 }
 

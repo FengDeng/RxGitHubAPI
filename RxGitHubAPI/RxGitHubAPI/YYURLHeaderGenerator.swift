@@ -12,7 +12,6 @@ public var RxGitHubUserName = ""
 public var RxGitHubPassword = ""
 
 
-
 //header when request Auth
 func AuthHeader()->[String:String]{
     let access = "\(RxGitHubUserName):\(RxGitHubPassword)".dataUsingEncoding(NSUTF8StringEncoding)?.base64EncodedStringWithOptions(.Encoding64CharacterLineLength) ?? ""

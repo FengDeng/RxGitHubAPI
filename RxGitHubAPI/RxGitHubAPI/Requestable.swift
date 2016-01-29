@@ -63,6 +63,12 @@ extension Request{
                     return
                 }
                 
+                //获取返回值的message,如果有的话
+                if let message = json.valueForKey("message") as? String{
+                    observer.onError(YYError.YYGitHubErrorJSON(message: message))
+                    return
+                }
+                
                 guard let obj = T.mj_objectWithKeyValues(json) else{
                     observer.onError(YYError.YYCouldNotMakeObjectError(status: response.response?.statusCode, message:response.result.value?.valueForKey("message") as? String))
                     return

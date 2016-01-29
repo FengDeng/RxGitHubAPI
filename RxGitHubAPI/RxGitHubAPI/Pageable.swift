@@ -79,6 +79,11 @@ public class Pageable<Element : _ArrayType where Element.Generator.Element : NSO
         return self
     }
     
+    public var nextPage : Pageable{
+        self.page++
+        return self
+    }
+    
 }
 
 
@@ -98,12 +103,14 @@ extension Request{
                     observer.onError(err)
                     return
                 }
-
+                
                 //判断result 的value是否是一个数组
                 guard let json = response.result.value as? [[String : AnyObject]] else{
                     observer.onError(YYError.YYCouldNotMakeObjectArrayError(status: response.response?.statusCode, message:response.result.value?.valueForKey("message") as? String))
                     return
                 }
+                
+                
                 var objects = T()
                 print(json)
                 for dict in json {

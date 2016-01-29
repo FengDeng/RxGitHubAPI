@@ -31,7 +31,7 @@ class RxGitHubAPI{
      
      - returns: Requestable<YYUser>
      */
-    static func yy_user()->Requestable<YYUser>{
+    static var yy_user : Requestable<YYUser>{
         return Requestable<YYUser>(mothod: .GET, url: userURL(RxGitHubUserName),headers:AuthHeader())
     }
     

@@ -45,6 +45,7 @@ public class YYUser : NSObject{
     
     
     //api
+    var url = ""
     var followers_url = ""
     var following_url = ""
     var gists_url = ""
