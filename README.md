@@ -46,6 +46,7 @@ if you get a Pageable<E>,you can get next page like this
 	user.yy_repos.nextPage.subscribeNext({ (repos) -> Void in
                 print(repos)
     })
+    
 
 or this
  

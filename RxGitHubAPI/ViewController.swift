@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         RxGitHubAPI.yy_user.subscribeNext { (user) -> Void in
             print(user.login)
-            user.yy_repos.page(20).subscribe({ (event) -> Void in
+            user.yy_repos.nextPage.subscribe({ (event) -> Void in
                 switch event{
                 case .Completed:
                     print("com")
@@ -31,10 +31,7 @@ class ViewController: UIViewController {
                 }
             })
         }
-        
-        RxGitHubAPI.yy_user.subscribeError { (err) -> Void in
-            print(err)
-        }
+
         
     }
     

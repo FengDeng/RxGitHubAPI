@@ -41,13 +41,6 @@ public class Pageable<Element : _ArrayType where Element.Generator.Element : NSO
     var encoding: ParameterEncoding = .URL
     var headers: [String: String]?
     
-    let disposeBag = DisposeBag()
-    
-    var responseHeaders : [NSObject : AnyObject]?
-    
-    
-    
-    
     init(mothod:Alamofire.Method,url:URLStringConvertible,parameters: [String: AnyObject]? = nil,
         encoding: ParameterEncoding = .URL,
         headers: [String: String]? = nil) {
@@ -56,8 +49,6 @@ public class Pageable<Element : _ArrayType where Element.Generator.Element : NSO
             self.parameters = parameters
             self.encoding = encoding
             self.headers = headers
-            
-            print(self)
     }
     
     public  func subscribe<O : ObserverType where O.E == E>(observer: O) -> Disposable {
