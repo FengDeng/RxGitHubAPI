@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (3.1.5)
+  - MJExtension (3.0.10)
+  - RxBlocking (2.0.0):
+    - RxSwift (~> 2.0)
+  - RxCocoa (2.0.0):
+    - RxSwift (~> 2.0)
+  - RxSwift (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.1.4)
+  - MJExtension
+  - RxBlocking (~> 2.0.0)
+  - RxCocoa (~> 2.0.0)
+  - RxSwift (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  RxBlocking: a95a10ed54eb5d116f6c9a87047ff671e181d07b
+  RxCocoa: b0ebd70b4f7450bdb3c8987b122f8fd568dc1e2f
+  RxSwift: d83246efa6f16c50c143bec134649d045498f601
+
+COCOAPODS: 0.39.0
