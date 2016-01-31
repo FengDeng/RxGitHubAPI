@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F14A4B91C59E85800494527 /* YYURLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4B81C59E85800494527 /* YYURLGenerator.swift */; };
-		9F14A4BB1C59E96100494527 /* YYURLHeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4BA1C59E96100494527 /* YYURLHeaderGenerator.swift */; };
 		9F14A4C31C59F23F00494527 /* YYRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4C21C59F23F00494527 /* YYRepository.swift */; };
 		9F14A4C51C59F59A00494527 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4C41C59F59A00494527 /* String+Extension.swift */; };
 		9F14A4C81C59FAC800494527 /* YYOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4C71C59FAC800494527 /* YYOrganization.swift */; };
@@ -33,6 +31,8 @@
 		9F57B35F1C5B3744005BA035 /* YYError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35E1C5B3744005BA035 /* YYError.swift */; };
 		9F57B3611C5B4581005BA035 /* YYSearchRepos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B3601C5B4581005BA035 /* YYSearchRepos.swift */; };
 		9F57B3631C5B4857005BA035 /* YYSearchUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B3621C5B4857005BA035 /* YYSearchUsers.swift */; };
+		9F57B36C1C5CB7D6005BA035 /* YYURLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B36A1C5CB7D6005BA035 /* YYURLGenerator.swift */; };
+		9F57B36D1C5CB7D6005BA035 /* YYURLHeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B36B1C5CB7D6005BA035 /* YYURLHeaderGenerator.swift */; };
 		9F9212151C58A562007DB071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9212141C58A562007DB071 /* AppDelegate.swift */; };
 		9F9212171C58A562007DB071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9212161C58A562007DB071 /* ViewController.swift */; };
 		9F92121A1C58A562007DB071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9212181C58A562007DB071 /* Main.storyboard */; };
@@ -59,8 +59,6 @@
 
 /* Begin PBXFileReference section */
 		03E05CEEA14DABA751AE1F8A /* Pods-RxGitHubAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxGitHubAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxGitHubAPI/Pods-RxGitHubAPI.release.xcconfig"; sourceTree = "<group>"; };
-		9F14A4B81C59E85800494527 /* YYURLGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYURLGenerator.swift; path = ../YYURLGenerator.swift; sourceTree = "<group>"; };
-		9F14A4BA1C59E96100494527 /* YYURLHeaderGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYURLHeaderGenerator.swift; path = ../YYURLHeaderGenerator.swift; sourceTree = "<group>"; };
 		9F14A4C21C59F23F00494527 /* YYRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRepository.swift; sourceTree = "<group>"; };
 		9F14A4C41C59F59A00494527 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9F14A4C71C59FAC800494527 /* YYOrganization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYOrganization.swift; sourceTree = "<group>"; };
@@ -85,6 +83,8 @@
 		9F57B35E1C5B3744005BA035 /* YYError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYError.swift; path = RxGitHubAPI/RxGitHubAPI/YYError.swift; sourceTree = SOURCE_ROOT; };
 		9F57B3601C5B4581005BA035 /* YYSearchRepos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSearchRepos.swift; sourceTree = "<group>"; };
 		9F57B3621C5B4857005BA035 /* YYSearchUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYSearchUsers.swift; sourceTree = "<group>"; };
+		9F57B36A1C5CB7D6005BA035 /* YYURLGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYURLGenerator.swift; path = RxGitHubAPI/RxGitHubAPI/YYURLGenerator.swift; sourceTree = SOURCE_ROOT; };
+		9F57B36B1C5CB7D6005BA035 /* YYURLHeaderGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YYURLHeaderGenerator.swift; path = RxGitHubAPI/RxGitHubAPI/YYURLHeaderGenerator.swift; sourceTree = SOURCE_ROOT; };
 		9F9212111C58A562007DB071 /* RxGitHubAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxGitHubAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9212141C58A562007DB071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F9212161C58A562007DB071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 		9F92123B1C58B247007DB071 /* Request And Map */ = {
 			isa = PBXGroup;
 			children = (
-				9F14A4BA1C59E96100494527 /* YYURLHeaderGenerator.swift */,
-				9F14A4B81C59E85800494527 /* YYURLGenerator.swift */,
+				9F57B36A1C5CB7D6005BA035 /* YYURLGenerator.swift */,
+				9F57B36B1C5CB7D6005BA035 /* YYURLHeaderGenerator.swift */,
 				9F57B35E1C5B3744005BA035 /* YYError.swift */,
 			);
 			name = "Request And Map";
@@ -407,7 +407,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F14A4D41C5A0CF300494527 /* YYReference.swift in Sources */,
-				9F14A4BB1C59E96100494527 /* YYURLHeaderGenerator.swift in Sources */,
 				9F14A4C31C59F23F00494527 /* YYRepository.swift in Sources */,
 				9F5648E31C590F5B00001E6D /* Requestable.swift in Sources */,
 				9F9212171C58A562007DB071 /* ViewController.swift in Sources */,
@@ -420,6 +419,7 @@
 				9F9212381C58ACB4007DB071 /* YYUser+Rx.swift in Sources */,
 				9F96365F1C59A94400FF1EA0 /* Pageable.swift in Sources */,
 				9F14A4C81C59FAC800494527 /* YYOrganization.swift in Sources */,
+				9F57B36D1C5CB7D6005BA035 /* YYURLHeaderGenerator.swift in Sources */,
 				9F14A4E01C5A2C5500494527 /* YYPullRequest.swift in Sources */,
 				9F57B35C1C5B3737005BA035 /* YYGist.swift in Sources */,
 				9F14A4DA1C5A1AC700494527 /* YYComment.swift in Sources */,
@@ -434,8 +434,8 @@
 				9F14A4D61C5A14FC00494527 /* YYCommit.swift in Sources */,
 				9F14A4D81C5A180800494527 /* YYTree.swift in Sources */,
 				9F92123D1C58B298007DB071 /* RxGitHubAPI.swift in Sources */,
+				9F57B36C1C5CB7D6005BA035 /* YYURLGenerator.swift in Sources */,
 				9F14A4CE1C5A09F200494527 /* YYTeam.swift in Sources */,
-				9F14A4B91C59E85800494527 /* YYURLGenerator.swift in Sources */,
 				9F14A4E61C5A380500494527 /* Dictionary+Extension.swift in Sources */,
 				9F57B3631C5B4857005BA035 /* YYSearchUsers.swift in Sources */,
 				9F57B3611C5B4581005BA035 /* YYSearchRepos.swift in Sources */,
