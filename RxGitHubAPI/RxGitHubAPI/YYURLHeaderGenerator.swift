@@ -8,8 +8,8 @@
 
 import Foundation
 
-public private(set) var RxGitHubUserName = ""
-public private(set) var RxGitHubPassword = ""
+public var RxGitHubUserName = ""
+public var RxGitHubPassword = ""
 
 
 //header when request Auth

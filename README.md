@@ -1,80 +1,112 @@
 # RxGitHubAPI
 a GitHubAPI base Stream by RxSwift
 
-博客地址 <http://fengdeng.github.io/>
+[中文博客](http://fengdeng.github.io/)
+
+[微博私信我]()
+
+#Trending
+
+	RxGitHubAPI.trendRepos(YYSince.Daily, language: "swift").subscribeNext { (repos) -> Void in
+    	print(repos)
+    }
 
 
-#Notice 
-###when you send a request that needs Auth
+----------
 
-you must set this,you can set it before your first request
+#Search
 
-	public var RxGitHubUserName = "username"
-	public var RxGitHubPassword = "password"
+users
 
-#How get a user
+		RxGitHubAPI.searchUsers("tangqiaoboy").subscribeNext { (searchuser) -> Void in
+            print((searchuser))
+        }
+        
+repos 
 
-How get a login user
+	RxGitHubAPI.searchRepos("RxSwift").subscribeNext { (searchRepo) -> Void in
+            print(searchRepo)
+    }
+    
+    
+----------
 
-	static func yy_user()->Requestable<YYUser>
 
-How get a nomal user
-	
-	static func yy_user(username:String)->Requestable<YYUser>
-	
+#YYUser
 
-#When you get a user
+1. 登录 
+		
+		RxGitHubUserName = ""
+        RxGitHubPassword = ""        
+        RxGitHubAPI.yy_user.subscribeNext { (user) -> Void in
+            print(user)
+        }
 
-get user's follower users
+2. 获取一个用户
 
-	user.yy_followers.subscribeNext({ (users) -> Void in
+		RxGitHubAPI.yy_user("tangqiaoboy").subscribeNext { (user) -> Void in
+            print(user)
+        }
+ 
+   
+3. follow或者unFollow这个用户
+
+		RxGitHubAPI.yy_user("tangqiaoboy").subscribeNext { (user) -> Void in
+            print(user)
+            user.action_follow.subscribeNext({ (isSuccess) -> Void in
+                if isSuccess{
+                    print("follow成功")
+                }
+            })
+            user.action_unFollow.subscribeNext({ (isSuccess) -> Void in
+                if isSuccess{
+                    print("follow成功")
+                }
+            })
+        }
+        
+4. 获取这个用户的所有repo
+ 
+ 		RxGitHubAPI.yy_user("tangqiaoboy").subscribeNext { (user) -> Void in
+            print(user)
+            user.yy_repos.subscribeNext({ (repos) -> Void in
+                print(repos)
+            })
+        }
+        
+5. 获取这个用户following的用户，或者following这个用户的用户
+
+		RxGitHubAPI.yy_user("tangqiaoboy").subscribeNext { (user) -> Void in
+            print(user)
+            user.yy_followers.subscribeNext({ (users) -> Void in
                 print(users)
-    })
+            })
+            user.yy_followings.subscribeNext({ (users) -> Void in
+                print(users)
+            })
+        }
+        
+6. 获取这个用户Star的repo
 
-get user's repos
-	
-	user.yy_repos.subscribeNext({ (repos) -> Void in
+		RxGitHubAPI.yy_user("tangqiaoboy").subscribeNext { (user) -> Void in
+            print(user)
+            user.yy_starred.subscribeNext({ (repos) -> Void in
                 print(repos)
-    })
-    
-and so on ……
- 
- 
-#When you get a repo
+            })
+        }
+        
+----------        
+        
+      
+#YYRepository
 
-star it
+自己去看接口吧，在`YYRepository+Rx.swift`里面
 
-	repo.action_star
-	
-unStar it
 
-	repo.action_unStar
-	
-check starring it
+----------
 
-	repo.action_checkStar
-	
-and so on ……
- 
-#List Result
 
-if you get a Pageable<E>,you can get next page like this
 
-	user.yy_repos.nextPage.subscribeNext({ (repos) -> Void in
-                print(repos)
-    })
-    
+#Cocoapods
 
-or this
- 
-	user.yy_repos.page(2).subscribeNext({ (repos) -> Void in
-                print(repos)
-    })
-    
-or you want set per_page
-
-	user.yy_repos.page(2,per_page:10).subscribeNext({ (repos) -> Void in
-                print(repos)
-    })
-    
-  
+暂时不提供使用，等到功能完善后会支持cocoapods的

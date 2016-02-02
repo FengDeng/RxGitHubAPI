@@ -18,19 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        RxGitHubAPI.trendRepos(YYSince.Daily, language: "swift").subscribe { (repos) -> Void in
-            switch repos{
-            case .Next(let repos):
-                for repo in repos{
-                    print(repo.full_name)
-                }
-            case.Completed:
-                print("completed")
-            case .Error:
-                print("error")
-            }
+       
+        RxGitHubAPI.searchRepos("RxSwift").subscribeNext { (searchRepo) -> Void in
+            print(searchRepo)
         }
-
         
     }
     
