@@ -22,11 +22,29 @@ public class YYEvent : NSObject{
     public var payLoad : NSObject?{
         switch self.type{
         case "CommitCommentEvent":
-            return "123"
+            return YYCommitCommentEvent.mj_objectWithKeyValues(self.payload)
         case "CreateEvent","DeleteEvent":
-            return ""
+            return YYRefEvent.mj_objectWithKeyValues(self.payload)
+        case "ForkEvent":
+            return YYForkEvent.mj_objectWithKeyValues(self.payload)
+        case "IssueCommentEvent":
+            return YYIssueCommentEvent.mj_objectWithKeyValues(self.payload)
+        case "IssuesEvent":
+            return YYIssueEvent.mj_objectWithKeyValues(self.payload)
+        case "MemberEvent":
+            return YYMemberEvent.mj_objectWithKeyValues(self.payload)
+        case "PublicEvent":
+            return YYPublicEvent.mj_objectWithKeyValues(self.payload)
+        case "PullRequestEvent":
+            return YYPullRequestEvent.mj_objectWithKeyValues(self.payload)
+        case "PullRequestReviewCommentEvent":
+            return YYPullRequestCommentEvent.mj_objectWithKeyValues(self.payload)
+        case "PushEvent":
+            return YYPushEvent.mj_objectWithKeyValues(self.payload)
+        case "WatchEvent":
+            return YYWatchEvent.mj_objectWithKeyValues(self.payload)
         default:
-            return "aaaa"
+            return "此payload还未添加解析方案"
         }
     }
     

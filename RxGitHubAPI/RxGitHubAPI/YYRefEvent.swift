@@ -8,6 +8,14 @@
 
 import Foundation
 
-class YYRefEvent: NSObject {
-
+public class YYRefEvent : NSObject{
+    public var ref = ""
+    public var ref_type = ""
+    public var master_branch = ""
+    public var _description = ""
+    public var pusher_type = ""
+    
+    public static override func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
+        return ["_description":"description"]
+    }
 }

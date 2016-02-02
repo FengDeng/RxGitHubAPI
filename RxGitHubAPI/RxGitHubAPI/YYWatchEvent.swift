@@ -8,6 +8,6 @@
 
 import Foundation
 
-class YYWatchEvent: NSObject {
-
+public class YYWatchEvent: NSObject {
+    public var action = ""
 }

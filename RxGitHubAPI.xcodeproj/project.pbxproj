@@ -38,7 +38,6 @@
 		9F53ABBC1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABBB1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift */; };
 		9F53ABBE1C608A0B00B7D2C8 /* YYPullRequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABBD1C608A0B00B7D2C8 /* YYPullRequestEvent.swift */; };
 		9F53ABC01C608A2200B7D2C8 /* YYPushEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABBF1C608A2200B7D2C8 /* YYPushEvent.swift */; };
-		9F53ABC21C608A3200B7D2C8 /* YYRefEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC11C608A3200B7D2C8 /* YYRefEvent.swift */; };
 		9F53ABC41C608A4100B7D2C8 /* YYWatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC31C608A4100B7D2C8 /* YYWatchEvent.swift */; };
 		9F53ABC71C608BF100B7D2C8 /* YYCommitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC61C608BF100B7D2C8 /* YYCommitUser.swift */; };
 		9F53ABC91C608C3E00B7D2C8 /* YYCommitDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC81C608C3E00B7D2C8 /* YYCommitDetail.swift */; };
@@ -48,6 +47,8 @@
 		9F53ABD21C60910B00B7D2C8 /* YYIssueComment+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD11C60910B00B7D2C8 /* YYIssueComment+Rx.swift */; };
 		9F53ABD41C6094ED00B7D2C8 /* YYPullRequestComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD31C6094ED00B7D2C8 /* YYPullRequestComment.swift */; };
 		9F53ABD61C60992A00B7D2C8 /* YYPushCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD51C60992A00B7D2C8 /* YYPushCommit.swift */; };
+		9F53ABD81C609D5A00B7D2C8 /* YYPushCommit+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD71C609D5A00B7D2C8 /* YYPushCommit+Rx.swift */; };
+		9F53ABDA1C609EC500B7D2C8 /* YYRefEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD91C609EC500B7D2C8 /* YYRefEvent.swift */; };
 		9F5648E31C590F5B00001E6D /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5648E21C590F5B00001E6D /* Requestable.swift */; };
 		9F57B35C1C5B3737005BA035 /* YYGist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35A1C5B3737005BA035 /* YYGist.swift */; };
 		9F57B35D1C5B3737005BA035 /* YYGist+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */; };
@@ -113,7 +114,6 @@
 		9F53ABBB1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequestCommentEvent.swift; sourceTree = "<group>"; };
 		9F53ABBD1C608A0B00B7D2C8 /* YYPullRequestEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequestEvent.swift; sourceTree = "<group>"; };
 		9F53ABBF1C608A2200B7D2C8 /* YYPushEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPushEvent.swift; sourceTree = "<group>"; };
-		9F53ABC11C608A3200B7D2C8 /* YYRefEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefEvent.swift; sourceTree = "<group>"; };
 		9F53ABC31C608A4100B7D2C8 /* YYWatchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWatchEvent.swift; sourceTree = "<group>"; };
 		9F53ABC61C608BF100B7D2C8 /* YYCommitUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitUser.swift; sourceTree = "<group>"; };
 		9F53ABC81C608C3E00B7D2C8 /* YYCommitDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitDetail.swift; sourceTree = "<group>"; };
@@ -123,6 +123,8 @@
 		9F53ABD11C60910B00B7D2C8 /* YYIssueComment+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYIssueComment+Rx.swift"; sourceTree = "<group>"; };
 		9F53ABD31C6094ED00B7D2C8 /* YYPullRequestComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequestComment.swift; sourceTree = "<group>"; };
 		9F53ABD51C60992A00B7D2C8 /* YYPushCommit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPushCommit.swift; sourceTree = "<group>"; };
+		9F53ABD71C609D5A00B7D2C8 /* YYPushCommit+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYPushCommit+Rx.swift"; sourceTree = "<group>"; };
+		9F53ABD91C609EC500B7D2C8 /* YYRefEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefEvent.swift; sourceTree = "<group>"; };
 		9F5648E21C590F5B00001E6D /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		9F57B35A1C5B3737005BA035 /* YYGist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGist.swift; sourceTree = "<group>"; };
 		9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYGist+Rx.swift"; sourceTree = "<group>"; };
@@ -243,8 +245,8 @@
 				9F53ABBB1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift */,
 				9F53ABBD1C608A0B00B7D2C8 /* YYPullRequestEvent.swift */,
 				9F53ABBF1C608A2200B7D2C8 /* YYPushEvent.swift */,
-				9F53ABC11C608A3200B7D2C8 /* YYRefEvent.swift */,
 				9F53ABC31C608A4100B7D2C8 /* YYWatchEvent.swift */,
+				9F53ABD91C609EC500B7D2C8 /* YYRefEvent.swift */,
 			);
 			name = YYEvent;
 			sourceTree = "<group>";
@@ -257,6 +259,7 @@
 				9F53ABCA1C608C9300B7D2C8 /* YYCommitParent.swift */,
 				9F53ABC61C608BF100B7D2C8 /* YYCommitUser.swift */,
 				9F53ABD51C60992A00B7D2C8 /* YYPushCommit.swift */,
+				9F53ABD71C609D5A00B7D2C8 /* YYPushCommit+Rx.swift */,
 			);
 			name = YYCommit;
 			sourceTree = "<group>";
@@ -506,8 +509,10 @@
 				9F53ABAA1C60884500B7D2C8 /* YYEventUser.swift in Sources */,
 				9F9212171C58A562007DB071 /* ViewController.swift in Sources */,
 				9F53ABBA1C6089DA00B7D2C8 /* YYPublicEvent.swift in Sources */,
+				9F53ABDA1C609EC500B7D2C8 /* YYRefEvent.swift in Sources */,
 				9F14A4DC1C5A1C7A00494527 /* YYContent.swift in Sources */,
 				9F14A4CA1C5A01C900494527 /* YYRepository+Rx.swift in Sources */,
+				9F53ABD81C609D5A00B7D2C8 /* YYPushCommit+Rx.swift in Sources */,
 				9F53ABB01C60896B00B7D2C8 /* YYCommitCommentEvent.swift in Sources */,
 				9F9212361C58A6C6007DB071 /* YYUser.swift in Sources */,
 				9F14A4C51C59F59A00494527 /* String+Extension.swift in Sources */,
@@ -530,7 +535,6 @@
 				9F14A4CC1C5A058600494527 /* YYCollaborator.swift in Sources */,
 				9F57B35D1C5B3737005BA035 /* YYGist+Rx.swift in Sources */,
 				9F14A4DE1C5A2BF500494527 /* YYIssue.swift in Sources */,
-				9F53ABC21C608A3200B7D2C8 /* YYRefEvent.swift in Sources */,
 				9F53ABA61C60824E00B7D2C8 /* YYFile.swift in Sources */,
 				9FC9620B1C5AFDD500C55CD2 /* Actionable.swift in Sources */,
 				9F14A4E41C5A33E600494527 /* YYAsset.swift in Sources */,

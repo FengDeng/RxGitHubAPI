@@ -22,6 +22,13 @@ class ViewController: UIViewController {
             switch user{
             case .Next(let user):
                 print(user.login)
+                
+                user.yy_events.subscribeNext({ (events) -> Void in
+                    for e in events{
+                        print(e)
+                    }
+                })
+                
             case.Completed:
                 print("completed")
             case .Error:
