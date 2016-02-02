@@ -95,4 +95,19 @@ class RxGitHubAPI{
     }
     
     
+    /**
+     trending repos
+     
+     - parameter since:    since description
+     - parameter language: language description
+     
+     - returns: return value description
+     */
+    static func trendRepos(since:YYSince,language:String)->Pageable<[YYRepository]>{
+        return Pageable(mothod: .GET, url: kTrendRepoURL(since, language: language))
+    }
+    
+    
+    
+    
 }

@@ -25,3 +25,14 @@ var kSearchReposURL : String{
 var kSearchUsersURL : String{
     return domain + "/search/users"
 }
+
+enum YYSince : String{
+    case Daily = "daily"
+    case Weekly = "weekly"
+    case Monthly = "monthly"
+}
+
+//trend
+func kTrendRepoURL(since:YYSince,language:String)->String{
+    return "http://trending.codehub-app.com/v2/trending?since=\(since.rawValue)&language=\(language)"
+}
