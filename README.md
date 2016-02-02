@@ -3,7 +3,7 @@ a GitHubAPI base Stream by RxSwift
 
 [中文博客](http://fengdeng.github.io/)
 
-[微博私信我]()
+[微博私信我](http://weibo.com/FengDeng1219)
 
 #Trending
 
