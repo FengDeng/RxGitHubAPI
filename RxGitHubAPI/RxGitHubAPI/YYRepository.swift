@@ -9,43 +9,43 @@
 import Foundation
 
 public class YYRepository : NSObject{
-    public var id = 0
-    public var owner = YYUser()
-    public var name = ""
-    public var full_name = ""
-    public var _description = ""
-    public var _private = false
-    public var fork = false
-    public var html_url = ""
-    public var clone_url = ""
-    public var git_url = ""
-    public var mirror_url = ""
-    public var ssh_url = ""
-    public var svn_url = ""
-    public var homepage = ""
-    public var language = ""
-    public var forks_count = 0
-    public var stargazers_count = 0
-    public var watchers_count = 0
-    public var size = 0
-    public var default_branch = ""
-    public var open_issues_count = 0
-    public var has_issues = false
-    public var has_downloads = false
-    public var has_wiki = false
-    public var has_pages = false
+    public private(set) var id = 0
+    public private(set) var owner = YYUser()
+    public private(set) var name = ""
+    public private(set) var full_name = ""
+    public private(set) var _description = ""
+    public private(set) var _private = false
+    public private(set) var fork = false
+    public private(set) var html_url = ""
+    public private(set) var clone_url = ""
+    public private(set) var git_url = ""
+    public private(set) var mirror_url = ""
+    public private(set) var ssh_url = ""
+    public private(set) var svn_url = ""
+    public private(set) var homepage = ""
+    public private(set) var language = ""
+    public private(set) var forks_count = 0
+    public private(set) var stargazers_count = 0
+    public private(set) var watchers_count = 0
+    public private(set) var size = 0
+    public private(set) var default_branch = ""
+    public private(set) var open_issues_count = 0
+    public private(set) var has_issues = false
+    public private(set) var has_downloads = false
+    public private(set) var has_wiki = false
+    public private(set) var has_pages = false
     
-    public var pushed_at = ""
-    public var created_at = ""
-    public var updated_at = ""
+    public private(set) var pushed_at = ""
+    public private(set) var created_at = ""
+    public private(set) var updated_at = ""
     
-    public var watchers = 0
-    public var open_issues = 0
+    public private(set) var watchers = 0
+    public private(set) var open_issues = 0
     
-    public var permissions = YYPermission()
+    public private(set) var permissions = YYPermission()
     
-    public var parent : YYRepository?
-    public var source : YYRepository?
+    public private(set) var parent : YYRepository?
+    public private(set) var source : YYRepository?
     
     public override static func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
         return ["_description":"description","_private":"private"]
@@ -105,8 +105,8 @@ public class YYRepository : NSObject{
 }
 
 public class YYPermission : NSObject{
-    public var admin = false
-    public var push = false
-    public var pull = false
+    public private(set) var admin = false
+    public private(set) var push = false
+    public private(set) var pull = false
 }
 

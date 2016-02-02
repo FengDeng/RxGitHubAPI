@@ -9,9 +9,9 @@
 import Foundation
 
 public class YYSearchUsers : NSObject{
-    public var total_count = 0
-    public var incomplete_results = false
-    public var items = [YYUser]()
+    public private(set) var total_count = 0
+    public private(set) var incomplete_results = false
+    public private(set) var items = [YYUser]()
     
     public class override func mj_objectClassInArray() -> [NSObject : AnyObject]! {
         return ["items":YYUser.self]

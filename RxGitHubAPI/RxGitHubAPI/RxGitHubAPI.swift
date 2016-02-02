@@ -32,7 +32,7 @@ class RxGitHubAPI{
      - returns: Requestable<YYUser>
      */
     static var yy_user : Requestable<YYUser>{
-        return Requestable(mothod: .GET, url: kUserURL(RxGitHubUserName),headers:AuthHeader())
+        return Requestable(mothod: .GET, url: kUserURL(RxGitHubUserName),headers:AuthHeader)
     }
     
     

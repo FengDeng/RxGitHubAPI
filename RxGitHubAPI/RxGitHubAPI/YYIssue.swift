@@ -9,23 +9,23 @@
 import Foundation
 
 public class YYIssue : NSObject{
-    public var id = 0
-    public var html_url = ""
-    public var title = ""
-    public var user = YYUser()
-    public var state = ""
-    public var created_at = ""
-    public var updated_at = ""
-    public var closed_at = ""
-    public var body = ""
-    public var comments = 0
-    public var locked = false
-    public var closed_by = ""
-    public var number = 0
+    public private(set) var id = 0
+    public private(set) var html_url = ""
+    public private(set) var title = ""
+    public private(set) var user = YYUser()
+    public private(set) var state = ""
+    public private(set) var created_at = ""
+    public private(set) var updated_at = ""
+    public private(set) var closed_at = ""
+    public private(set) var body = ""
+    public private(set) var comments = 0
+    public private(set) var locked = false
+    public private(set) var closed_by = ""
+    public private(set) var number = 0
     
-    public var assignee = YYUser()
-    public var pull_request = YYIssuePullRequest()
-    public var labels = [YYLabel]()
+    public private(set) var assignee = YYUser()
+    public private(set) var pull_request = YYIssuePullRequest()
+    public private(set) var labels = [YYLabel]()
     
     //api
     var url = ""
@@ -36,9 +36,9 @@ public class YYIssue : NSObject{
 }
 
 public class YYIssuePullRequest :  NSObject{
-    public var html_url = ""
-    public var diff_url = ""
-    public var patch_url = ""
+    public private(set) var html_url = ""
+    public private(set) var diff_url = ""
+    public private(set) var patch_url = ""
     
     //api
     var url = ""
@@ -47,8 +47,8 @@ public class YYIssuePullRequest :  NSObject{
 
 
 public class YYLabel : NSObject{
-    public var name = ""
-    public var color = ""
+    public private(set) var name = ""
+    public private(set) var color = ""
     
     //api
     var url = ""

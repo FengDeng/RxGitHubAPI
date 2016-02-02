@@ -10,9 +10,9 @@ import Foundation
 
 public class YYCollaborator : YYUser{
     
-    public var permissions_pull = false
-    public var permissions_push = false
-    public var permissions_admin = false
+    public private(set) var permissions_pull = false
+    public private(set) var permissions_push = false
+    public private(set) var permissions_admin = false
     
     public static override func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
         return ["permissions_pull":"permissions.pull","permissions_push":"permissions.push","permissions_admin":"permissions.admin"]

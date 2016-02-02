@@ -9,9 +9,9 @@
 import Foundation
 
 public class YYSearchRepos : NSObject{
-    public var total_count = 0
-    public var incomplete_results = false
-    public var items = [YYRepository]()
+    public private(set) var total_count = 0
+    public private(set) var incomplete_results = false
+    public private(set) var items = [YYRepository]()
     
     public class override func mj_objectClassInArray() -> [NSObject : AnyObject]! {
         return ["items":YYRepository.self]

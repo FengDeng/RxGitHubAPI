@@ -9,10 +9,10 @@
 import Foundation
 
 public class YYOrganization : NSObject{
-    public var login = ""
-    public var id = 0
-    public var avatar_url = ""
-    public var _description = ""
+    public private(set) var login = ""
+    public private(set) var id = 0
+    public private(set) var avatar_url = ""
+    public private(set) var _description = ""
     
     public override static func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
         return ["_description":"description"]

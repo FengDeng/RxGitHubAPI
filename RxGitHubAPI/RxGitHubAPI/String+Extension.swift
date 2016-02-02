@@ -8,7 +8,7 @@
 
 import Foundation
 extension String{
-    func yy_clear()->String{
+    var yy_clear : String{
         
         let str = (self as NSString)
         

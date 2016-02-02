@@ -18,7 +18,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_forks : Pageable<[YYRepository]>{
-        return Pageable(mothod: .GET, url: self.forks_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.forks_url.yy_clear)
     }
     
     /**
@@ -27,7 +27,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_collaborators : Pageable<[YYCollaborator]>{
-        return Pageable(mothod: .GET, url: self.collaborators_url.yy_clear(),headers:AuthHeader())
+        return Pageable(mothod: .GET, url: self.collaborators_url.yy_clear,headers:AuthHeader)
     }
     
     /**
@@ -36,7 +36,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_teams : Pageable<[YYTeam]>{
-        return Pageable(mothod: .GET, url: self.teams_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.teams_url.yy_clear)
     }
     
     //fix me
@@ -50,7 +50,7 @@ extension YYRepository{
     - returns: 
     */
     public var yy_assignees : Pageable<[YYUser]>{
-        return Pageable(mothod: .GET, url: self.assignees_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.assignees_url.yy_clear)
     }
     
     /**
@@ -59,7 +59,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_branches : Pageable<[YYBranch]>{
-        return Pageable(mothod: .GET, url: self.branches_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.branches_url.yy_clear)
     }
     
     /**
@@ -68,7 +68,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_tags : Pageable<[YYTag]>{
-        return Pageable(mothod: .GET, url: self.tags_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.tags_url.yy_clear)
     }
     
     //fix me
@@ -81,7 +81,7 @@ extension YYRepository{
     - returns: 
     */
     public var yy_git_refs : Pageable<[YYReference]>{
-        return Pageable(mothod: .GET, url: self.git_refs_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.git_refs_url.yy_clear)
     }
     
     //fix me
@@ -95,7 +95,7 @@ extension YYRepository{
     */
     public var yy_languages : Observable<[String:Int]>{
         return Observable.create { (observer) -> Disposable in
-            let request = Alamofire.request(.GET, self.languages_url.yy_clear())
+            let request = Alamofire.request(.GET, self.languages_url.yy_clear)
             request.responseJSON(completionHandler: { (response) -> Void in
                 //判断Response是否有error
                 if let responseError = response.result.error{
@@ -127,7 +127,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_stargazers : Pageable<[YYUser]>{
-        return Pageable(mothod: .GET, url: self.stargazers_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.stargazers_url.yy_clear)
     }
     
     /**
@@ -136,7 +136,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_contributors : Pageable<[YYUser]>{
-        return Pageable(mothod: .GET, url: self.contributors_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.contributors_url.yy_clear)
     }
     
     /**
@@ -145,7 +145,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_subscribers : Pageable<[YYUser]>{
-        return Pageable(mothod: .GET, url: self.subscribers_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.subscribers_url.yy_clear)
     }
     
     
@@ -159,7 +159,7 @@ extension YYRepository{
     - returns: 
     */
     public var yy_commits : Pageable<[YYCommit]>{
-        return Pageable(mothod: .GET, url: self.commits_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.commits_url.yy_clear)
     }
     
     //fix me
@@ -170,8 +170,8 @@ extension YYRepository{
     
     - returns: 
     */
-    public var yy_comments : Pageable<[YYComment]>{
-        return Pageable(mothod: .GET, url: self.comments_url.yy_clear())
+    public var yy_comments : Pageable<[YYCommitComment]>{
+        return Pageable(mothod: .GET, url: self.comments_url.yy_clear)
     }
     
     /**
@@ -179,8 +179,8 @@ extension YYRepository{
      
      - returns: 
      */
-    public var yy_issue_comments : Pageable<[YYComment]>{
-        return Pageable(mothod: .GET, url: self.comments_url.yy_clear())
+    public var yy_issue_comments : Pageable<[YYIssueComment]>{
+        return Pageable(mothod: .GET, url: self.comments_url.yy_clear)
     }
     
     /**
@@ -189,7 +189,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_contents : Pageable<[YYContent]>{
-        return Pageable(mothod: .GET, url: self.comments_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.comments_url.yy_clear)
     }
     
     //fix me
@@ -204,7 +204,7 @@ extension YYRepository{
     - returns: 
     */
     public var yy_issues : Pageable<[YYIssue]>{
-        return Pageable(mothod: .GET, url: self.issues_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.issues_url.yy_clear)
     }
     
     /**
@@ -213,7 +213,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_pull : Pageable<[YYPullRequest]>{
-        return Pageable(mothod: .GET, url: self.pulls_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.pulls_url.yy_clear)
     }
     
     //fix me
@@ -227,7 +227,7 @@ extension YYRepository{
     - returns: 
     */
     public var yy_labels : Pageable<[YYLabel]>{
-        return Pageable(mothod: .GET, url: self.labels_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.labels_url.yy_clear)
     }
     
     /**
@@ -236,7 +236,7 @@ extension YYRepository{
      - returns: 
      */
     public var yy_releases : Pageable<[YYRelease]>{
-        return Pageable(mothod: .GET, url: self.releases_url.yy_clear())
+        return Pageable(mothod: .GET, url: self.releases_url.yy_clear)
     }
     
     
@@ -251,7 +251,7 @@ extension YYRepository{
     - returns: return value description
     */
     public var action_star : Actionable<Bool>{
-        return Actionable(mothod: .PUT, url: self.action_star_url.yy_clear(),headers:AuthHeader())
+        return Actionable(mothod: .PUT, url: self.action_star_url.yy_clear,headers:AuthHeader)
     }
     
     /**
@@ -260,7 +260,7 @@ extension YYRepository{
      - returns: return value description
      */
     public var action_unStar : Actionable<Bool>{
-        return Actionable(mothod: .DELETE, url: self.action_star_url.yy_clear(),headers:AuthHeader())
+        return Actionable(mothod: .DELETE, url: self.action_star_url.yy_clear,headers:AuthHeader)
     }
     
     /**
@@ -269,7 +269,7 @@ extension YYRepository{
      - returns:
      */
     public var action_checkStar : Actionable<Bool>{
-        return Actionable(mothod: .GET, url: self.action_star_url.yy_clear(),headers:AuthHeader())
+        return Actionable(mothod: .GET, url: self.action_star_url.yy_clear,headers:AuthHeader)
     }
     
     /**
@@ -278,7 +278,7 @@ extension YYRepository{
      - returns: return value description
      */
     public var action_watch : Actionable<Bool>{
-        return Actionable(mothod: .PUT, url: self.action_watch_url.yy_clear(),headers:AuthHeader())
+        return Actionable(mothod: .PUT, url: self.action_watch_url.yy_clear,headers:AuthHeader)
     }
     
     /**
@@ -287,7 +287,7 @@ extension YYRepository{
      - returns: return value description
      */
     public var action_unWatch : Actionable<Bool>{
-        return Actionable(mothod: .DELETE, url: self.action_watch_url.yy_clear(),headers:AuthHeader())
+        return Actionable(mothod: .DELETE, url: self.action_watch_url.yy_clear,headers:AuthHeader)
     }
     
     /**
@@ -296,7 +296,7 @@ extension YYRepository{
      - returns:
      */
     public var action_checkWatch : Actionable<Bool>{
-        return Actionable(mothod: .GET, url: self.action_watch_url.yy_clear(),headers:AuthHeader())
+        return Actionable(mothod: .GET, url: self.action_watch_url.yy_clear,headers:AuthHeader)
     }
     
 }

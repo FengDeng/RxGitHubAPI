@@ -9,19 +9,19 @@
 import Foundation
 
 public class YYRelease : NSObject{
-    public var upload_url = ""
-    public var html_url = ""
-    public var id = 0
-    public var tag_name = ""
-    public var target_commitish = ""
-    public var name = ""
-    public var draft = false
-    public var author = YYUser()
-    public var prerelease = false
-    public var created_at = ""
-    public var published_at = ""
-    public var assets = [YYAsset]()
-    public var body = ""
+    public private(set) var upload_url = ""
+    public private(set) var html_url = ""
+    public private(set) var id = 0
+    public private(set) var tag_name = ""
+    public private(set) var target_commitish = ""
+    public private(set) var name = ""
+    public private(set) var draft = false
+    public private(set) var author = YYUser()
+    public private(set) var prerelease = false
+    public private(set) var created_at = ""
+    public private(set) var published_at = ""
+    public private(set) var assets = [YYAsset]()
+    public private(set) var body = ""
     
     
     public class override func mj_objectClassInArray() -> [NSObject : AnyObject]! {

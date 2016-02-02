@@ -18,13 +18,36 @@
 		9F14A4D41C5A0CF300494527 /* YYReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4D31C5A0CF300494527 /* YYReference.swift */; };
 		9F14A4D61C5A14FC00494527 /* YYCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4D51C5A14FC00494527 /* YYCommit.swift */; };
 		9F14A4D81C5A180800494527 /* YYTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4D71C5A180800494527 /* YYTree.swift */; };
-		9F14A4DA1C5A1AC700494527 /* YYComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4D91C5A1AC700494527 /* YYComment.swift */; };
 		9F14A4DC1C5A1C7A00494527 /* YYContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4DB1C5A1C7A00494527 /* YYContent.swift */; };
 		9F14A4DE1C5A2BF500494527 /* YYIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4DD1C5A2BF500494527 /* YYIssue.swift */; };
 		9F14A4E01C5A2C5500494527 /* YYPullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4DF1C5A2C5500494527 /* YYPullRequest.swift */; };
 		9F14A4E21C5A324E00494527 /* YYRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4E11C5A324E00494527 /* YYRelease.swift */; };
 		9F14A4E41C5A33E600494527 /* YYAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4E31C5A33E500494527 /* YYAsset.swift */; };
 		9F14A4E61C5A380500494527 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14A4E51C5A380500494527 /* Dictionary+Extension.swift */; };
+		9F53ABA41C60776B00B7D2C8 /* YYEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABA31C60776B00B7D2C8 /* YYEvent.swift */; };
+		9F53ABA61C60824E00B7D2C8 /* YYFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABA51C60824E00B7D2C8 /* YYFile.swift */; };
+		9F53ABAA1C60884500B7D2C8 /* YYEventUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABA91C60884500B7D2C8 /* YYEventUser.swift */; };
+		9F53ABAC1C60886500B7D2C8 /* YYEventRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABAB1C60886500B7D2C8 /* YYEventRepo.swift */; };
+		9F53ABAE1C6088E200B7D2C8 /* YYEventOrg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABAD1C6088E200B7D2C8 /* YYEventOrg.swift */; };
+		9F53ABB01C60896B00B7D2C8 /* YYCommitCommentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABAF1C60896B00B7D2C8 /* YYCommitCommentEvent.swift */; };
+		9F53ABB21C60897E00B7D2C8 /* YYForkEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABB11C60897E00B7D2C8 /* YYForkEvent.swift */; };
+		9F53ABB41C60899400B7D2C8 /* YYIssueCommentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABB31C60899400B7D2C8 /* YYIssueCommentEvent.swift */; };
+		9F53ABB61C6089AD00B7D2C8 /* YYIssueEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABB51C6089AD00B7D2C8 /* YYIssueEvent.swift */; };
+		9F53ABB81C6089C700B7D2C8 /* YYMemberEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABB71C6089C700B7D2C8 /* YYMemberEvent.swift */; };
+		9F53ABBA1C6089DA00B7D2C8 /* YYPublicEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABB91C6089DA00B7D2C8 /* YYPublicEvent.swift */; };
+		9F53ABBC1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABBB1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift */; };
+		9F53ABBE1C608A0B00B7D2C8 /* YYPullRequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABBD1C608A0B00B7D2C8 /* YYPullRequestEvent.swift */; };
+		9F53ABC01C608A2200B7D2C8 /* YYPushEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABBF1C608A2200B7D2C8 /* YYPushEvent.swift */; };
+		9F53ABC21C608A3200B7D2C8 /* YYRefEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC11C608A3200B7D2C8 /* YYRefEvent.swift */; };
+		9F53ABC41C608A4100B7D2C8 /* YYWatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC31C608A4100B7D2C8 /* YYWatchEvent.swift */; };
+		9F53ABC71C608BF100B7D2C8 /* YYCommitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC61C608BF100B7D2C8 /* YYCommitUser.swift */; };
+		9F53ABC91C608C3E00B7D2C8 /* YYCommitDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABC81C608C3E00B7D2C8 /* YYCommitDetail.swift */; };
+		9F53ABCB1C608C9300B7D2C8 /* YYCommitParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABCA1C608C9300B7D2C8 /* YYCommitParent.swift */; };
+		9F53ABCE1C608FD300B7D2C8 /* YYIssueComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABCD1C608FD300B7D2C8 /* YYIssueComment.swift */; };
+		9F53ABD01C60900400B7D2C8 /* YYCommitComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABCF1C60900400B7D2C8 /* YYCommitComment.swift */; };
+		9F53ABD21C60910B00B7D2C8 /* YYIssueComment+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD11C60910B00B7D2C8 /* YYIssueComment+Rx.swift */; };
+		9F53ABD41C6094ED00B7D2C8 /* YYPullRequestComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD31C6094ED00B7D2C8 /* YYPullRequestComment.swift */; };
+		9F53ABD61C60992A00B7D2C8 /* YYPushCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F53ABD51C60992A00B7D2C8 /* YYPushCommit.swift */; };
 		9F5648E31C590F5B00001E6D /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5648E21C590F5B00001E6D /* Requestable.swift */; };
 		9F57B35C1C5B3737005BA035 /* YYGist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35A1C5B3737005BA035 /* YYGist.swift */; };
 		9F57B35D1C5B3737005BA035 /* YYGist+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */; };
@@ -70,13 +93,36 @@
 		9F14A4D31C5A0CF300494527 /* YYReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYReference.swift; sourceTree = "<group>"; };
 		9F14A4D51C5A14FC00494527 /* YYCommit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommit.swift; sourceTree = "<group>"; };
 		9F14A4D71C5A180800494527 /* YYTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYTree.swift; sourceTree = "<group>"; };
-		9F14A4D91C5A1AC700494527 /* YYComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYComment.swift; sourceTree = "<group>"; };
 		9F14A4DB1C5A1C7A00494527 /* YYContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYContent.swift; sourceTree = "<group>"; };
 		9F14A4DD1C5A2BF500494527 /* YYIssue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYIssue.swift; sourceTree = "<group>"; };
 		9F14A4DF1C5A2C5500494527 /* YYPullRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequest.swift; sourceTree = "<group>"; };
 		9F14A4E11C5A324E00494527 /* YYRelease.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRelease.swift; sourceTree = "<group>"; };
 		9F14A4E31C5A33E500494527 /* YYAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYAsset.swift; sourceTree = "<group>"; };
 		9F14A4E51C5A380500494527 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		9F53ABA31C60776B00B7D2C8 /* YYEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEvent.swift; sourceTree = "<group>"; };
+		9F53ABA51C60824E00B7D2C8 /* YYFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYFile.swift; sourceTree = "<group>"; };
+		9F53ABA91C60884500B7D2C8 /* YYEventUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEventUser.swift; sourceTree = "<group>"; };
+		9F53ABAB1C60886500B7D2C8 /* YYEventRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEventRepo.swift; sourceTree = "<group>"; };
+		9F53ABAD1C6088E200B7D2C8 /* YYEventOrg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEventOrg.swift; sourceTree = "<group>"; };
+		9F53ABAF1C60896B00B7D2C8 /* YYCommitCommentEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitCommentEvent.swift; sourceTree = "<group>"; };
+		9F53ABB11C60897E00B7D2C8 /* YYForkEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYForkEvent.swift; sourceTree = "<group>"; };
+		9F53ABB31C60899400B7D2C8 /* YYIssueCommentEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYIssueCommentEvent.swift; sourceTree = "<group>"; };
+		9F53ABB51C6089AD00B7D2C8 /* YYIssueEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYIssueEvent.swift; sourceTree = "<group>"; };
+		9F53ABB71C6089C700B7D2C8 /* YYMemberEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYMemberEvent.swift; sourceTree = "<group>"; };
+		9F53ABB91C6089DA00B7D2C8 /* YYPublicEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPublicEvent.swift; sourceTree = "<group>"; };
+		9F53ABBB1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequestCommentEvent.swift; sourceTree = "<group>"; };
+		9F53ABBD1C608A0B00B7D2C8 /* YYPullRequestEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequestEvent.swift; sourceTree = "<group>"; };
+		9F53ABBF1C608A2200B7D2C8 /* YYPushEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPushEvent.swift; sourceTree = "<group>"; };
+		9F53ABC11C608A3200B7D2C8 /* YYRefEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefEvent.swift; sourceTree = "<group>"; };
+		9F53ABC31C608A4100B7D2C8 /* YYWatchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYWatchEvent.swift; sourceTree = "<group>"; };
+		9F53ABC61C608BF100B7D2C8 /* YYCommitUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitUser.swift; sourceTree = "<group>"; };
+		9F53ABC81C608C3E00B7D2C8 /* YYCommitDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitDetail.swift; sourceTree = "<group>"; };
+		9F53ABCA1C608C9300B7D2C8 /* YYCommitParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitParent.swift; sourceTree = "<group>"; };
+		9F53ABCD1C608FD300B7D2C8 /* YYIssueComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYIssueComment.swift; sourceTree = "<group>"; };
+		9F53ABCF1C60900400B7D2C8 /* YYCommitComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCommitComment.swift; sourceTree = "<group>"; };
+		9F53ABD11C60910B00B7D2C8 /* YYIssueComment+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYIssueComment+Rx.swift"; sourceTree = "<group>"; };
+		9F53ABD31C6094ED00B7D2C8 /* YYPullRequestComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPullRequestComment.swift; sourceTree = "<group>"; };
+		9F53ABD51C60992A00B7D2C8 /* YYPushCommit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYPushCommit.swift; sourceTree = "<group>"; };
 		9F5648E21C590F5B00001E6D /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		9F57B35A1C5B3737005BA035 /* YYGist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYGist.swift; sourceTree = "<group>"; };
 		9F57B35B1C5B3737005BA035 /* YYGist+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YYGist+Rx.swift"; sourceTree = "<group>"; };
@@ -146,9 +192,9 @@
 				9F14A4CF1C5A0B3600494527 /* YYBranch.swift */,
 				9F14A4D11C5A0BD300494527 /* YYTag.swift */,
 				9F14A4D31C5A0CF300494527 /* YYReference.swift */,
-				9F14A4D51C5A14FC00494527 /* YYCommit.swift */,
+				9F53ABC51C608B2000B7D2C8 /* YYCommit */,
 				9F14A4D71C5A180800494527 /* YYTree.swift */,
-				9F14A4D91C5A1AC700494527 /* YYComment.swift */,
+				9F53ABCC1C608FBE00B7D2C8 /* YYComment */,
 				9F14A4DB1C5A1C7A00494527 /* YYContent.swift */,
 				9F14A4DD1C5A2BF500494527 /* YYIssue.swift */,
 				9F14A4DF1C5A2C5500494527 /* YYPullRequest.swift */,
@@ -156,6 +202,8 @@
 				9F14A4E31C5A33E500494527 /* YYAsset.swift */,
 				9F57B3601C5B4581005BA035 /* YYSearchRepos.swift */,
 				9F57B3621C5B4857005BA035 /* YYSearchUsers.swift */,
+				9F53ABA81C6087FA00B7D2C8 /* YYEvent */,
+				9F53ABA51C60824E00B7D2C8 /* YYFile.swift */,
 			);
 			name = "Model And Rx";
 			sourceTree = "<group>";
@@ -177,6 +225,51 @@
 				9F14A4E51C5A380500494527 /* Dictionary+Extension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		9F53ABA81C6087FA00B7D2C8 /* YYEvent */ = {
+			isa = PBXGroup;
+			children = (
+				9F53ABA31C60776B00B7D2C8 /* YYEvent.swift */,
+				9F53ABA91C60884500B7D2C8 /* YYEventUser.swift */,
+				9F53ABAB1C60886500B7D2C8 /* YYEventRepo.swift */,
+				9F53ABAD1C6088E200B7D2C8 /* YYEventOrg.swift */,
+				9F53ABAF1C60896B00B7D2C8 /* YYCommitCommentEvent.swift */,
+				9F53ABB11C60897E00B7D2C8 /* YYForkEvent.swift */,
+				9F53ABB31C60899400B7D2C8 /* YYIssueCommentEvent.swift */,
+				9F53ABB51C6089AD00B7D2C8 /* YYIssueEvent.swift */,
+				9F53ABB71C6089C700B7D2C8 /* YYMemberEvent.swift */,
+				9F53ABB91C6089DA00B7D2C8 /* YYPublicEvent.swift */,
+				9F53ABBB1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift */,
+				9F53ABBD1C608A0B00B7D2C8 /* YYPullRequestEvent.swift */,
+				9F53ABBF1C608A2200B7D2C8 /* YYPushEvent.swift */,
+				9F53ABC11C608A3200B7D2C8 /* YYRefEvent.swift */,
+				9F53ABC31C608A4100B7D2C8 /* YYWatchEvent.swift */,
+			);
+			name = YYEvent;
+			sourceTree = "<group>";
+		};
+		9F53ABC51C608B2000B7D2C8 /* YYCommit */ = {
+			isa = PBXGroup;
+			children = (
+				9F14A4D51C5A14FC00494527 /* YYCommit.swift */,
+				9F53ABC81C608C3E00B7D2C8 /* YYCommitDetail.swift */,
+				9F53ABCA1C608C9300B7D2C8 /* YYCommitParent.swift */,
+				9F53ABC61C608BF100B7D2C8 /* YYCommitUser.swift */,
+				9F53ABD51C60992A00B7D2C8 /* YYPushCommit.swift */,
+			);
+			name = YYCommit;
+			sourceTree = "<group>";
+		};
+		9F53ABCC1C608FBE00B7D2C8 /* YYComment */ = {
+			isa = PBXGroup;
+			children = (
+				9F53ABCD1C608FD300B7D2C8 /* YYIssueComment.swift */,
+				9F53ABD11C60910B00B7D2C8 /* YYIssueComment+Rx.swift */,
+				9F53ABCF1C60900400B7D2C8 /* YYCommitComment.swift */,
+				9F53ABD31C6094ED00B7D2C8 /* YYPullRequestComment.swift */,
+			);
+			name = YYComment;
 			sourceTree = "<group>";
 		};
 		9F9212081C58A562007DB071 = {
@@ -409,36 +502,59 @@
 				9F14A4D41C5A0CF300494527 /* YYReference.swift in Sources */,
 				9F14A4C31C59F23F00494527 /* YYRepository.swift in Sources */,
 				9F5648E31C590F5B00001E6D /* Requestable.swift in Sources */,
+				9F53ABD41C6094ED00B7D2C8 /* YYPullRequestComment.swift in Sources */,
+				9F53ABAA1C60884500B7D2C8 /* YYEventUser.swift in Sources */,
 				9F9212171C58A562007DB071 /* ViewController.swift in Sources */,
+				9F53ABBA1C6089DA00B7D2C8 /* YYPublicEvent.swift in Sources */,
 				9F14A4DC1C5A1C7A00494527 /* YYContent.swift in Sources */,
 				9F14A4CA1C5A01C900494527 /* YYRepository+Rx.swift in Sources */,
+				9F53ABB01C60896B00B7D2C8 /* YYCommitCommentEvent.swift in Sources */,
 				9F9212361C58A6C6007DB071 /* YYUser.swift in Sources */,
 				9F14A4C51C59F59A00494527 /* String+Extension.swift in Sources */,
+				9F53ABBE1C608A0B00B7D2C8 /* YYPullRequestEvent.swift in Sources */,
+				9F53ABCB1C608C9300B7D2C8 /* YYCommitParent.swift in Sources */,
 				9F9212151C58A562007DB071 /* AppDelegate.swift in Sources */,
 				9F57B35F1C5B3744005BA035 /* YYError.swift in Sources */,
+				9F53ABB81C6089C700B7D2C8 /* YYMemberEvent.swift in Sources */,
 				9F9212381C58ACB4007DB071 /* YYUser+Rx.swift in Sources */,
 				9F96365F1C59A94400FF1EA0 /* Pageable.swift in Sources */,
 				9F14A4C81C59FAC800494527 /* YYOrganization.swift in Sources */,
+				9F53ABAC1C60886500B7D2C8 /* YYEventRepo.swift in Sources */,
 				9F57B36D1C5CB7D6005BA035 /* YYURLHeaderGenerator.swift in Sources */,
 				9F14A4E01C5A2C5500494527 /* YYPullRequest.swift in Sources */,
+				9F53ABC71C608BF100B7D2C8 /* YYCommitUser.swift in Sources */,
+				9F53ABB21C60897E00B7D2C8 /* YYForkEvent.swift in Sources */,
 				9F57B35C1C5B3737005BA035 /* YYGist.swift in Sources */,
-				9F14A4DA1C5A1AC700494527 /* YYComment.swift in Sources */,
+				9F53ABD01C60900400B7D2C8 /* YYCommitComment.swift in Sources */,
 				9F14A4D01C5A0B3600494527 /* YYBranch.swift in Sources */,
 				9F14A4CC1C5A058600494527 /* YYCollaborator.swift in Sources */,
 				9F57B35D1C5B3737005BA035 /* YYGist+Rx.swift in Sources */,
 				9F14A4DE1C5A2BF500494527 /* YYIssue.swift in Sources */,
+				9F53ABC21C608A3200B7D2C8 /* YYRefEvent.swift in Sources */,
+				9F53ABA61C60824E00B7D2C8 /* YYFile.swift in Sources */,
 				9FC9620B1C5AFDD500C55CD2 /* Actionable.swift in Sources */,
 				9F14A4E41C5A33E600494527 /* YYAsset.swift in Sources */,
 				9F14A4E21C5A324E00494527 /* YYRelease.swift in Sources */,
+				9F53ABBC1C6089F700B7D2C8 /* YYPullRequestCommentEvent.swift in Sources */,
+				9F53ABA41C60776B00B7D2C8 /* YYEvent.swift in Sources */,
+				9F53ABB61C6089AD00B7D2C8 /* YYIssueEvent.swift in Sources */,
 				9F14A4D21C5A0BD300494527 /* YYTag.swift in Sources */,
 				9F14A4D61C5A14FC00494527 /* YYCommit.swift in Sources */,
 				9F14A4D81C5A180800494527 /* YYTree.swift in Sources */,
+				9F53ABD21C60910B00B7D2C8 /* YYIssueComment+Rx.swift in Sources */,
 				9F92123D1C58B298007DB071 /* RxGitHubAPI.swift in Sources */,
+				9F53ABC41C608A4100B7D2C8 /* YYWatchEvent.swift in Sources */,
 				9F57B36C1C5CB7D6005BA035 /* YYURLGenerator.swift in Sources */,
 				9F14A4CE1C5A09F200494527 /* YYTeam.swift in Sources */,
 				9F14A4E61C5A380500494527 /* Dictionary+Extension.swift in Sources */,
+				9F53ABD61C60992A00B7D2C8 /* YYPushCommit.swift in Sources */,
+				9F53ABAE1C6088E200B7D2C8 /* YYEventOrg.swift in Sources */,
+				9F53ABC91C608C3E00B7D2C8 /* YYCommitDetail.swift in Sources */,
+				9F53ABB41C60899400B7D2C8 /* YYIssueCommentEvent.swift in Sources */,
 				9F57B3631C5B4857005BA035 /* YYSearchUsers.swift in Sources */,
+				9F53ABC01C608A2200B7D2C8 /* YYPushEvent.swift in Sources */,
 				9F57B3611C5B4581005BA035 /* YYSearchRepos.swift in Sources */,
+				9F53ABCE1C608FD300B7D2C8 /* YYIssueComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

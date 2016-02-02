@@ -9,16 +9,16 @@
 import Foundation
 
 public class YYContent : NSObject{
-    public var type = ""
-    public var encoding = ""
-    public var size = 0
-    public var name = ""
-    public var path = ""
-    public var content = ""
-    public var sha = ""
-    public var html_url = ""
-    public var download_url = ""
-    public var _links = YYLink()
+    public private(set) var type = ""
+    public private(set) var encoding = ""
+    public private(set) var size = 0
+    public private(set) var name = ""
+    public private(set) var path = ""
+    public private(set) var content = ""
+    public private(set) var sha = ""
+    public private(set) var html_url = ""
+    public private(set) var download_url = ""
+    public private(set) var _links = YYLink()
     
     //api
     var url = ""
@@ -26,7 +26,7 @@ public class YYContent : NSObject{
 }
 
 public class YYLink : NSObject{
-    public var html = ""
+    public private(set) var html = ""
     
     //api 
     var _self = ""

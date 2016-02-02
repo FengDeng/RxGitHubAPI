@@ -9,8 +9,8 @@
 import Foundation
 
 public class YYTag : NSObject{
-    public var name = ""
-    public var commit_sha = ""
+    public private(set) var name = ""
+    public private(set) var commit_sha = ""
     
     public static override func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
         return ["commit_sha":"commit.sha","commit_url":"commit.url"]

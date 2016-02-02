@@ -9,45 +9,28 @@
 import Foundation
 
 public class YYCommit : NSObject{
-    public var sha = ""
-    public var commit = YYCommitSub()
-    public var html_url = ""
-    public var author = YYUser()
-    public var committer = YYUser()
-    public var parents = [YYCommitParent]()
+    public private(set) var sha = ""
+    public private(set) var commit = YYCommitDetail()
+    public private(set) var html_url = ""
+    public private(set) var author : YYUser?
+    public private(set) var committer : YYUser?
+    public private(set) var parents : [YYCommitParent]?
+    public private(set) var stats_total = 0
+    public private(set) var stats_additions = 0
+    public private(set) var stats_deletions = 0
+    public private(set) var files : YYFile?
     
     //api
     var url = ""
     var comments_url = ""
     
     public class override func mj_objectClassInArray() -> [NSObject : AnyObject]! {
-        return ["parents":YYCommitParent.self]
+        return ["parents":YYCommitParent.self,"files":YYFile.self]
+    }
+    public class override func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
+        return ["stats_total":"stats.total","stats_additions":"stats.additions","stats_deletions":"stats.deletions"]
     }
     
 }
 
-public class YYCommitParent : NSObject{
-    public var sha = ""
-    public var html_url = ""
-    
-    //api
-    var url = ""
-}
 
-public class YYCommitSub : NSObject{
-    public var author = YYCommitUser()
-    public var committer = YYCommitUser()
-    public var message = ""
-    public var tree = YYTree()
-    public var comment_count = 0
-    
-    //api
-    var url = ""
-    
-}
-
-public class YYCommitUser : NSObject{
-    public var name = ""
-    public var email = ""
-    public var date = ""
-}

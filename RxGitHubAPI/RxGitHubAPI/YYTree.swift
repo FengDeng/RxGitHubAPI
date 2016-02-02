@@ -8,7 +8,7 @@
 
 import Foundation
 public class YYTree : NSObject{
-    public var sha = ""
+    public private(set) var sha = ""
     
     
     //api

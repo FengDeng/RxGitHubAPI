@@ -8,12 +8,12 @@
 
 import Foundation
 
-public var RxGitHubUserName = ""
-public var RxGitHubPassword = ""
+public private(set) var RxGitHubUserName = ""
+public private(set) var RxGitHubPassword = ""
 
 
 //header when request Auth
-func AuthHeader()->[String:String]{
+var AuthHeader : [String:String]{
     let access = "\(RxGitHubUserName):\(RxGitHubPassword)".dataUsingEncoding(NSUTF8StringEncoding)?.base64EncodedStringWithOptions(.Encoding64CharacterLineLength) ?? ""
     let authorization = "Basic \(access)"
     return ["Authorization":authorization]

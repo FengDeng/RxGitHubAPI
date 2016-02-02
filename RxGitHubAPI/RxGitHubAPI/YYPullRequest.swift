@@ -9,46 +9,46 @@
 import Foundation
 
 public class YYPullRequest : NSObject{
-    public var id = 0
-    public var html_url = ""
-    public var diff_url = ""
-    public var patch_url = ""
-    public var number = 0
-    public var state = ""
-    public var title = ""
-    public var body = ""
+    public private(set) var id = 0
+    public private(set) var html_url = ""
+    public private(set) var diff_url = ""
+    public private(set) var patch_url = ""
+    public private(set) var number = 0
+    public private(set) var state = ""
+    public private(set) var title = ""
+    public private(set) var body = ""
     
-    //public var assignee =
-    //public var milestone =
+    //public private(set) var assignee =
+    //public private(set) var milestone =
     
-    public var locked = false
-    public var created_at = ""
-    public var updated_at = ""
-    public var closed_at = ""
-    public var merged_at = ""
+    public private(set) var locked = false
+    public private(set) var created_at = ""
+    public private(set) var updated_at = ""
+    public private(set) var closed_at = ""
+    public private(set) var merged_at = ""
     
-    public var head_label = ""
-    public var head_ref = ""
-    public var head_user = YYUser()
-    public var head_repo = YYRepository()
+    public private(set) var head_label = ""
+    public private(set) var head_ref = ""
+    public private(set) var head_user = YYUser()
+    public private(set) var head_repo = YYRepository()
     
-    public var base_label = ""
-    public var base_ref = ""
-    public var base_user = YYUser()
-    public var base_repo = YYRepository()
+    public private(set) var base_label = ""
+    public private(set) var base_ref = ""
+    public private(set) var base_user = YYUser()
+    public private(set) var base_repo = YYRepository()
     
-    public var user = YYUser()
+    public private(set) var user = YYUser()
     
-    public var merged = false
-    public var mergeable = false
-    public var mergeable_state = ""
-    public var merged_by = ""
-    public var comments = 0
-    public var review_comments = 0
-    public var commits = 0
-    public var additons = 0
-    public var deletions = 0
-    public var changed_files = 0
+    public private(set) var merged = false
+    public private(set) var mergeable = false
+    public private(set) var mergeable_state = ""
+    public private(set) var merged_by = ""
+    public private(set) var comments = 0
+    public private(set) var review_comments = 0
+    public private(set) var commits = 0
+    public private(set) var additons = 0
+    public private(set) var deletions = 0
+    public private(set) var changed_files = 0
     
     
     public static override func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {

@@ -9,12 +9,12 @@
 import Foundation
 
 public class YYTeam : NSObject{
-    public var id = 0
-    public var name = ""
-    public var slug = ""
-    public var _description = ""
-    public var privacy = ""
-    public var permission = ""
+    public private(set) var id = 0
+    public private(set) var name = ""
+    public private(set) var slug = ""
+    public private(set) var _description = ""
+    public private(set) var privacy = ""
+    public private(set) var permission = ""
     
     public static override func mj_replacedKeyFromPropertyName() -> [NSObject : AnyObject]! {
         return ["_description":"description"]
