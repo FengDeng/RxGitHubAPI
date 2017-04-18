@@ -5,7 +5,7 @@ a GitHubAPI base Stream by RxSwift
 
 [微博私信我](http://weibo.com/FengDeng1219)
 
-#Trending
+# Trending
 
 	RxGitHubAPI.trendRepos(YYSince.Daily, language: "swift").subscribeNext { (repos) -> Void in
     	print(repos)
@@ -14,7 +14,7 @@ a GitHubAPI base Stream by RxSwift
 
 ----------
 
-#Search
+# Search
 
 users
 
@@ -32,7 +32,7 @@ repos
 ----------
 
 
-#YYUser
+# YYUser
 
 1. 登录 
 		
@@ -98,7 +98,7 @@ repos
 ----------        
         
       
-#YYRepository
+# YYRepository
 
 自己去看接口吧，在`YYRepository+Rx.swift`里面
 
@@ -107,6 +107,6 @@ repos
 
 
 
-#Cocoapods
+# Cocoapods
 
 暂时不提供使用，等到功能完善后会支持cocoapods的
